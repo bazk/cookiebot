@@ -1,0 +1,15 @@
+{
+    "db": {
+        "user": "cookiebot",
+        "password": "password",
+        "database": "cookiebot",
+        "host": "hostname",
+        "port": 5432
+    },
+    "irc": {
+        "channel": "#channel",
+        "server": "irc.twitch.tv",
+        "nick": "botname",
+        "password": "oauth:pass"
+    }
+}

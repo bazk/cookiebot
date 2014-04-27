@@ -1,0 +1,24 @@
+{
+  "name": "cookiebot",
+  "version": "1.0.0",
+  "description": "CookieBot is a simple IRC Bot for twitch.tv that awards cookie points to people!",
+  "main": "bot.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bazk/cookiebot.git"
+  },
+  "keywords": [
+    "twitch",
+    "livinpink"
+  ],
+  "author": "Eduardo L. Buratti <eburatti09@gmail.com>",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/bazk/cookiebot/issues"
+  },
+  "homepage": "https://github.com/bazk/cookiebot",
+  "dependencies": {
+    "irc": "^0.3.6",
+    "pg": "^3.0.3"
+  }
+}
