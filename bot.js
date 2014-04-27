@@ -39,6 +39,10 @@ function sayCookies(channel, username) {
     });
 }
 
+function sayInfinite(channel, username) {
+    bot.say(channel, username + " is super awesome and has an infinite ammount of cookie points!");
+}
+
 function addCookies(channel, username, ammount) {
     pg.connect(config.db, function (err, client, done) {
         if (err) {
@@ -84,7 +88,16 @@ bot.addListener("message", function(from, to, text, message) {
 
     args = text.match(/^ *\!jar +([a-zA-Z0-9_]+) *$/);
     if (args) {
-        sayCookies(to, args[1]);
+        var lowerUsername = args[1].toLowerCase();
+
+        if ( (lowerUsername === 'livinpink') ||
+             (lowerUsername === 'livinpinkcookies') ||
+             (lowerUsername === 'drbazooka') ) {
+            sayInfinite(to, args[1]);
+        }
+        else {
+            sayCookies(to, args[1]);
+        }
     }
 
     args = text.match(/^ *\!jar *$/);
