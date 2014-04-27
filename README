@@ -1,0 +1,13 @@
+COOKIEBOT
+=========
+
+CookieBot is a simple IRC Bot for twitch.tv that awards cookie points to people!
+
+
+Chat Commands
+-------------
+
+!cookie <ammount> <username>    Awards <amount> cookie points to <username> (note
+                                that <amount> can be a negative number).
+!jar                            Shows how many cookies <username> has (if
+                                omitted, <username> = yourself).
